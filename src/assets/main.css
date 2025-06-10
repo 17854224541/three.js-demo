@@ -1,0 +1,82 @@
+@import './base.css';
+
+/* 重置基础样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+/* 登录页样式增强 */
+.login-container {
+  width: 100%;
+  height: 100%;
+}
+
+.login-container .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.login-container .login-content {
+  position: relative;
+  z-index: 10;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .login-content {
+    width: 90% !important;
+    max-width: 400px;
+    padding: 20px !important;
+  }
+}
+
+/* 主页内容区域自适应 */
+.home-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.el-container {
+  width: 100%;
+  height: 100%;
+}
+
+.car-showcase {
+  width: 100%;
+  height: 100%;
+}
