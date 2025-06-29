@@ -9,6 +9,7 @@ import App from './App.vue'
 // 导入视图组件
 import Login from './views/Login.vue'
 import Home from './views/Home.vue'
+import Images from './views/Images.vue'
 
 // 定义路由
 const routes = [
@@ -19,6 +20,12 @@ const routes = [
     name: 'home', 
     component: Home,
     meta: { requiresAuth: true }  // 添加需要认证的元信息
+  },
+  { 
+    path: '/images', 
+    name: 'images', 
+    component: Images,
+    meta: { requiresAuth: false }  // 添加需要认证的元信息
   }
 ]
 
